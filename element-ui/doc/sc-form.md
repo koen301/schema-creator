@@ -370,7 +370,10 @@ export default {
     schema() {
       return {
         model: this.model, // 这里绑定表单model
+        labelPosition: 'left',
+        labelWidth: '50px',
         colSpan: 8, // col布局，同element官方，默认24
+        gutter: 20, // 栅格col间隔，同element官方，单位px，默认0
         formItems: [
           {
             type: 'title', // 使用表单title
