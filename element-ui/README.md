@@ -3,9 +3,11 @@
 ## 介绍
 我们都知道Vue admin后台页面大部分都包含表单form以及表格/列表table，每次编写这些表单/表格及构建不同逻辑的表单/表格需要浪费大量的模板代码去完成，到后面维护或修改往往是灾难。@schema-creator正是为了解决这个问题，它用schema JSON的方式来构建整个表单或表格（包括事件及双向绑定），从而使后台开发代码变得更简单和可维护。
 
-@schema-creator/element-ui 是基于 element-ui 组件库来驱动，主要包含的组件有 sc-form、sc-table 及 sc-template。相关API查看对应文档：
-- sc-form [sc-form](./doc/sc-form.md)
-- sc-table [sc-table](./doc/sc-table.md)
+@schema-creator/element-ui 是基于 element-ui 组件库来驱动（必须先安装 element-ui），主要包含的组件有 sc-form、sc-table 及 sc-template。相关API查看对应文档：
+- sc-form>>> [sc-form](https://gitee.com/kris301/schema-creator/blob/master/element-ui/doc/sc-form.md)
+- sc-table>>> [sc-table](https://gitee.com/kris301/schema-creator/blob/master/element-ui/doc/sc-table.md)
+
+项目git地址：[gitee @schema-creator/element-ui](https://gitee.com/kris301/schema-creator/tree/master/element-ui)
 
 ## Install
 ```shell

@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Example1 from './components/Example1.vue';
-import Example2 from './components/Example2.vue';
-import Example3 from './components/Example3.vue';
-import Example4 from './components/Example4.vue';
+import Example1 from './views/Example1.vue';
+import Example2 from './views/Example2.vue';
+import Example3 from './views/Example3.vue';
+import Example4 from './views/Example4.vue';
 
 Vue.use(Router);
 

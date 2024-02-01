@@ -7,7 +7,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@schema-creator/element-ui": "^1.0.2",
+    "@schema-creator/element-ui": "^1.0.4",
     "element-ui": "^2.15.14",
     "lodash-es": "^4.17.21",
     "vue": "^2.6.11",

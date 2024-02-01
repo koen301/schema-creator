@@ -426,9 +426,7 @@ export default {
 ![image](http://team.3dxtyun.com/uploads/picture/40/202401/986c81da338c1d62ce81936c05468454.jpg)
 
 
-更多demo示例 >>> [sc-form demo](https://plm-pre.3dxt.com/PDMManage/plui/demo)
-
-demo项目文件路径： ``` \src\components\page\plui\Demo.vue ```
+更多demo示例下载 >>> [sc-form example](https://gitee.com/kris301/schema-creator/tree/master/element-ui/example)
 
 
 ## 3. Form Attributes

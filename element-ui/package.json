@@ -1,6 +1,6 @@
 {
   "name": "@schema-creator/element-ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A component generator that generates Element forms or Element tables using JSON schema",
   "main": "src/index.js",
   "typings": "types/index.d.ts",
