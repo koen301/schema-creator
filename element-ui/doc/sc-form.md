@@ -426,7 +426,7 @@ export default {
 ![image](http://team.3dxtyun.com/uploads/picture/40/202401/986c81da338c1d62ce81936c05468454.jpg)
 
 
-更多demo示例下载 >>> [sc-form example](https://gitee.com/kris301/schema-creator/tree/master/element-ui/example)
+更多demo示例下载 >>> [sc-form example](https://github.com/koen301/schema-creator/tree/master/element-ui/example)
 
 
 ## 3. Form Attributes
