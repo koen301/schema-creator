@@ -1,6 +1,7 @@
 # schema-creator
 
 ## 介绍
+用schema JSON配置的方式，生成页面的表单及表格等，基于Vue及其它UI框架，例如Element-UI。
 详见 [@schema-creator/element-ui](./element-ui/README.md)
 
 
