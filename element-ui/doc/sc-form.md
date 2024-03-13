@@ -204,6 +204,8 @@ export default {
 
 ![image](http://team.3dxtyun.com/uploads/picture/40/202401/a9c4af7891967ffec63d4c56355b3c3d.jpg)
 
+>  注意：当表单有设置rules验证时，除非输入值全是字符串（如上例），否则应该尽量设置model具体field的初始值而不是一个空对象，因为如果是空对象组件会赋值一个默认的值（例如空数组）可能会导致el-form触发了验证或导致验证不正确。
+
 - **同一份schema根据不同model生成独立表单**
 
 
@@ -463,7 +465,7 @@ gutter | 栅格col间隔，具体参考 Element Layout 布局 | number | 0
 参数 | 说明 | 类型 | 默认值
 ---|---|---|---
 type | type 表单控件的类型，支持Element 官方所有表单控件，例如 el-input、el-select、el-cads、el-upload等等<br>另外常用的 el-button、el-dropdown 非表单控件也提供了支持，注意名称需要去掉前缀'el-'，例如 el-date-picker 的 type 为```'date-picker'```<br>另外额外提供了 type 为 ```text、html、slot、title、component``` 的支持，方便生成更多自定义内容，具体配置见“form 控件配置”<br>另外提供了一些类似 vue 原生 v-model 指令的修饰符支持，分别有```.lazy```，```.number```，```.trim```，例如声明 ```type: 'input.number'``` 则表明将输入值转换为数字类型 | string | -
-field | 双向绑定的字段名称，对应上面 model 对象的字段（合并配置会把它赋值给 form-item 的 prop 属性，方便校验）<br>支持响应`field：'items[0].name'`这种复杂结构 model 写法，但建议构建简单 model。 | string | -
+field | 双向绑定的字段名称，对应上面 model 对象的字段（注意与 form-item 组件属性 prop 的区别，独立配置需要 prop 与组件的 field 字段同时赋值，这样才能使它的校验生效；合并配置则可以省略 prop，因为程序会把 form 控件的 field 值同时赋值给 form-item 的 prop 属性，以使配置更简洁）<br>支持响应`field：'items[0].name'`这种复杂结构 model 写法，但建议构建简单 model。 | string | -
 model | 需要独立双向绑定的一个数据(不同于表单配置的model对象)，可以定义这个，同时 field 字段名称需要改成一致，例如绑定`this.otherFormData`，field 则是```'otherFormData'``` | string / number / boolean / object / array | -
 subtype | 如果控件自身也有 type 属性，那么可以配置这个，代表 Element控件的原生 type 属性，例如配置 el-button 控件的 ```type: 'primary'``` | string | -
 on | 定义控件的事件，支持 Element 官方所有事件，具体查看官方表单控件API。<br>另外额外支持 el-input 控件```@keyup.native``` 及```@keyup.enter.native```事件，配置为```{'keyup.enter.native'() { ...code }}``` | object | -
